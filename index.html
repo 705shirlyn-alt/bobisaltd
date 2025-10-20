@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobisa Limited | Premium Furniture Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                  <img src="assets/logo.png" alt="Bobisa Limited Logo" class="logo-image">  
+                </div> 
+                </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#catalogue">Catalogue</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Elevate Your Space with Premium Furniture</h1>
+            <p>Discover our curated collection of office, home, and institutional furniture designed for modern living and working.</p>
+            <a href="#categories" class="btn">Explore Our Furniture</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Crafting Spaces That Inspire</h2>
+                <p>With over 15 years of experience, we transform environments with quality furniture solutions.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2008, Bobisa Limited began with a simple mission: to create beautiful, functional spaces that enhance productivity and wellbeing. Our journey started with office furniture and has since expanded to include home, institutional, and specialized solutions.</p>
+                    <p>We believe that well-designed environments can transform how people work, live, and interact. That's why we focus on craftsmanship, sustainability, and innovative design in every piece we create.</p>
+                    <p>Our team of designers and craftsmen work together to deliver furniture that not only looks stunning but stands the test of time.</p>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="assets/images/Earthy Serenity Color Palette.jpeg" alt="Our workshop">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Our Product Categories</h2>
+                <p>Explore our diverse range of furniture solutions for every space and need.</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card fade-in">
+                    <div class="category-image">
+                        <img src="assets/images/office furniture.jpeg">
+                    </div>
+                    <div class="category-content">
+                        <h3>Office Furniture</h3>
+                        <p>Ergonomic desks, executive chairs, and collaborative workspaces designed for productivity.</p>
+                    </div>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-image">
+                        <img src="assets/images/demountable partitions.jpeg" alt="Partitions">
+                    </div>
+                    <div class="category-content">
+                        <h3>Demountable Partitions</h3>
+                        <p>Flexible, sound-absorbing partitions that create private spaces without permanent construction.</p>
+                    </div>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-image">
+                        <img src="assets/images/home furniture.jpeg">
+                    </div>
+                    <div class="category-content">
+                        <h3>Home Furniture</h3>
+                        <p>Stylish and comfortable pieces that transform houses into personalized homes.</p>
+                    </div>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-image">
+                        <img src="assets/images/institutional furniture.jpeg">
+                    </div>
+                    <div class="category-content">
+                        <h3>Institutional Furniture</h3>
+                        <p>Durable, functional furniture for schools, hospitals, and public spaces.</p>
+                    </div>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-image">
+                        <img src="assets/images/carpeting.jpeg">
+                    </div>
+                    <div class="category-content">
+                        <h3>Carpeting</h3>
+                        <p>Premium carpets in various textures and colors to complement any interior.</p>
+                    </div>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-image">
+                        <img src="assets/images/curtains and blinds.jpeg">
+                    </div>
+                    <div class="category-content">
+                        <h3>Curtains & Blinds</h3>
+                        <p>Window treatments that balance light control, privacy, and aesthetic appeal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Products Modal -->
+    <div class="modal" id="categoryModal">
+        <div class="modal-content category-modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="categoryModalTitle">Category Products</h2>
+            </div>
+            <div class="modal-body">
+                <div class="category-products-grid" id="categoryProductsGrid">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Featured Products</h2>
+                <p>Discover our handpicked selection of premium furniture pieces.</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="assets/images/ergonomic office chair.jpeg">
+                        <div class="product-overlay">
+                            <div class="view-details" data-product="1">View Details</div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Ergonomic Office Chair</h3>
+                        <p>Designed for all-day comfort with lumbar support and adjustable features.</p>
+                      
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="assets/images/executive desk.jpeg">
+                        <div class="product-overlay">
+                            <div class="view-details" data-product="2">View Details</div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Executive Desk</h3>
+                        <p>Minimalist design with ample workspace and built-in cable management.</p>
+                        
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="assets/images/modular sofa.jpeg">
+                        <div class="product-overlay">
+                            <div class="view-details" data-product="3">View Details</div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Modular Sofa</h3>
+                        <p>Customizable configuration with premium fabric and comfortable cushions.</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Catalogue Section -->
+<section class="catalogue" id="catalogue">
+    <div class="container">
+        <div class="section-title fade-in">
+            <h2>Experience Our Diverse Catalogue</h2>
+            <p>Browse our complete collection of premium furniture solutions</p>
+        </div>
+        <div class="catalogue-toolbar fade-in">
+            <button class="btn" id="openPdf">Open Catalogue PDF</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Get In Touch</h2>
+                <p>Ready to transform your space? Contact us for a consultation.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Let's Create Something Beautiful Together</h3>
+                    <p>Our team is ready to help you select the perfect furniture solutions for your home, office, or institution. Reach out to us through any of the following methods:</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>0704 400 006</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@bobisa.co.ke</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p>0704 400 006</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="inquiryForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Product Category</label>
+                            <select id="category">
+                                <option value="">Select a category</option>
+                                <option value="office">Office Furniture</option>
+                                <option value="partitions">Partitions</option>
+                                <option value="home">Home Furniture</option>
+                                <option value="institutional">Institutional Furniture</option>
+                                <option value="carpeting">Carpeting</option>
+                                <option value="curtains">Curtains & Blinds</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                        <div class="footer-logo">
+                        <div class="logo-icon">
+                          <img src="assets/logo.png" alt="Bobisa Limited Logo" class="logo-image"> 
+                        </div>
+                    </div>
+                    <p>Transforming spaces with premium furniture solutions for over 15 years. We specialize in office, home, and institutional furniture that combines style, comfort, and functionality.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-container">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#catalogue">Catalogue</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-container">
+                    <h3 class="footer-heading">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Office Furniture</a></li>
+                        <li><a href="#">Partitions</a></li>
+                        <li><a href="#">Home Furniture</a></li>
+                        <li><a href="#">Institutional</a></li>
+                        <li><a href="#">Carpeting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-container">
+                    <h3 class="footer-heading">Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Aquarium House, Nairobi</li>
+                        <li><i class="fas fa-phone"></i> 0704 400 006</li>
+                        <li><i class="fas fa-envelope"></i> info@bobisa.co.ke</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bobisa Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="Product Image" id="modalImage">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modalTitle">Product Title</h2>
+                    <p id="modalDescription">Product description goes here.</p>
+                    <ul class="modal-features" id="modalFeatures">
+                        <!-- Features will be added dynamically -->
+                    </ul>
+                    <div class="modal-price" id="modalPrice">$0</div>
+                    <a href="#contact" class="btn">Inquire About This Product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
